@@ -1,0 +1,79 @@
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  width: 600px;
+  margin-inline: auto;
+  margin-top: 42px;
+  border-radius: 16px;
+  background: var(--crl-neutral-100);
+  padding: 30px 60px;
+  position: relative;
+}
+.modalForm {
+  min-height: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modalFormInner h2 {
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--crl-neutral-200);
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.inputDiv label {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.inputDiv input {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+}
+.inputDiv input:focus {
+  outline: none;
+}
+
+.actionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 100vmax;
+  color: var(--crl-neutral-100);
+  background: var(--crl-neutral-900);
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+}
+.actionButton:hover {
+  background: var(--crl-neutral-800);
+}
+.modalClose {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 6px;
+}
+.modalClose:hover {
+  background: var(--crl-neutral-200);
+}
