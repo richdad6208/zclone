@@ -6,11 +6,14 @@
   --crl-blue-900: #1a8cd8;
 
   --crl-neutral-100: hsl(0, 0%, 99%);
+  --crl-neutral-150: hsl(0, 0%, 94%);
   --crl-neutral-200: hsl(0, 0%, 87%);
   --crl-neutral-300: hsl(0, 0%, 70%);
   --crl-neutral-400: hsl(0, 0%, 60%);
   --crl-neutral-800: hsl(0, 0%, 10%);
   --crl-neutral-900: hsl(0, 0%, 0%);
+
+  --leftSection-width: 267px;
 }
 
 *,
@@ -36,4 +39,8 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style: none;
 }

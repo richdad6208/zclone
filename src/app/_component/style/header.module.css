@@ -1,0 +1,30 @@
+.header h2 {
+  margin-bottom: 20px;
+  padding: 14px;
+  font-size: 22px;
+}
+
+.tabMenu {
+  display: flex;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.tabMenu li {
+  flex: 1;
+  position: relative;
+  border-bottom: 1px solid var(--crl-neutral-150);
+  padding-block: 22px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tabMenu li.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 95%;
+  left: 40%;
+  background-color: var(--crl-blue-800);
+  width: 20%;
+  height: 4px;
+}

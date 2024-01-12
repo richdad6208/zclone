@@ -5,12 +5,24 @@
   position: relative;
 }
 .leftSection {
-  width: 267px;
+  width: var(--leftSection-width);
   height: 100dvh;
   position: fixed;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 10px;
+}
+.logo {
+  margin-left: 14px;
+  padding: 4px;
+  border-radius: 50%;
+  width: fit-content;
+}
+.logo:hover {
+  cursor: pointer;
+  background-color: var(--crl-neutral-200);
 }
 .rightSection {
   background-color: lightblue;
@@ -44,4 +56,29 @@
   font-weight: 600;
   color: white;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.logoutDiv {
+  margin-top: auto;
+}
+.logout {
+  display: flex;
+  gap: 10px;
+}
+.logoutPhoto {
+  display: block;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logoutPhoto img {
+  width: 100%;
+  object-fit: cover;
+}
+.logoutTitle {
+  font-weight: 700;
+  font-size: 14px;
+}
+.logoutBody {
+  font-size: 13px;
 }

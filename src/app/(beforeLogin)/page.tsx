@@ -20,7 +20,7 @@ export default function Home() {
           <button className={cx("button", "primary")}>계정 만들기</button>
         </Link>
         <p>이미 트위터에 가입하셨나요?</p>
-        <Link href="/i/flow/login">
+        <Link href="/login">
           <button className={cx("button")}>로그인</button>
         </Link>
       </div>

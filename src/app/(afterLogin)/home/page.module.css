@@ -1,4 +1,6 @@
 .content {
   width: 600px;
   height: 500dvh;
+  margin-left: var(--leftSection-width);
+  border: 1px solid var(--crl-neutral-150);
 }
