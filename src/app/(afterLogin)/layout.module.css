@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  position: relative;
+}
+.leftSection {
+  width: 267px;
+  height: 100dvh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightSection {
+  background-color: lightblue;
+  height: 100dvh;
+  width: 334px;
+}
+
+.menuItem {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px 10px;
+}
+.menuItem:hover {
+  background-color: var(--crl-neutral-200);
+  border-radius: 100vmax;
+  width: fit-content;
+  cursor: pointer;
+}
+.menuText {
+  font-size: 20px;
+}
+
+.actionButton {
+  width: 90%;
+  background: var(--crl-blue-800);
+  margin-top: 20px;
+  padding: 14px 0;
+  border: 0;
+  border-radius: 100vmax;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
