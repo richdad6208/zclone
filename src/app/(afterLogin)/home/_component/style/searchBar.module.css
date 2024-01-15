@@ -1,0 +1,12 @@
+.inputDiv {
+  display: flex;
+  border-radius: 100vmax;
+  padding: 11px 22px;
+  background-color: var(--crl-neutral-150);
+}
+.inputDiv input {
+  margin-left: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

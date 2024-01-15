@@ -1,0 +1,45 @@
+.userInterActionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.actionDiv {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  fill: var(--crl-neutral-500);
+  color: var(--crl-neutral-500);
+  font-size: 13px;
+  transition: 0.1s;
+}
+.actionDiv:hover {
+  cursor: pointer;
+}
+.actionDiv:hover.comment {
+  fill: var(--crl-blue-800);
+  color: var(--crl-blue-800);
+}
+.actionDiv:hover.comment > .iconSpan {
+  background-color: var(--crl-blue-100);
+}
+.actionDiv:hover.retweet {
+  fill: var(--crl-green-800);
+  color: var(--crl-green-800);
+}
+.actionDiv:hover.retweet > .iconSpan {
+  background-color: var(--crl-green-100);
+}
+.actionDiv:hover.like {
+  fill: var(--crl-red-800);
+  color: var(--crl-red-800);
+}
+.actionDiv:hover.like > .iconSpan {
+  background-color: var(--crl-red-100);
+}
+
+.iconSpan {
+  padding: 8px;
+  border-radius: 50%;
+}

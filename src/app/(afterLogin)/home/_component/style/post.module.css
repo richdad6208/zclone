@@ -1,0 +1,28 @@
+.postArticle {
+  border-bottom: 1px solid var(--crl-neutral-150);
+}
+.postDiv {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+}
+.userAvatarSpan {
+  align-self: flex-start;
+}
+.postTextPhoto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postTextPhoto > :last-child {
+  flex-grow: 1;
+}
+
+.contentPhotoDiv {
+  margin-top: 10px;
+}
+
+.contentPhotoDiv img {
+  width: 514px;
+}

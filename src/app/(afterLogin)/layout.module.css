@@ -25,9 +25,13 @@
   background-color: var(--crl-neutral-200);
 }
 .rightSection {
-  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   height: 100dvh;
-  width: 334px;
+  width: 350px;
+  padding-top: 10px;
+  background-color: lightblue;
 }
 
 .menuItem {
@@ -60,25 +64,55 @@
 
 .logoutDiv {
   margin-top: auto;
+  padding: 10px;
+}
+.logoutDiv:hover {
+  cursor: pointer;
+  background-color: var(--crl-neutral-200);
+  border-radius: 100vmax;
+  width: 100%;
 }
 .logout {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
-.logoutPhoto {
-  display: block;
-  width: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.logoutPhoto img {
-  width: 100%;
-  object-fit: cover;
-}
+
 .logoutTitle {
   font-weight: 700;
   font-size: 14px;
 }
 .logoutBody {
   font-size: 13px;
+}
+
+.trendDiv,
+.followDiv {
+  border-radius: 16px;
+  padding: 10px 20px 20px;
+  background-color: var(--crl-neutral-150);
+  font-weight: 700;
+}
+.trendDiv {
+  font-size: 20px;
+}
+.followDiv h2 {
+  font-size: 22px;
+}
+.followItem {
+  display: grid;
+  grid-template-columns: 100px 1fr fit-content(100px);
+  grid-template-rows: 34px;
+  align-items: center;
+  gap: 10px;
+}
+.userInform {
+  text-align: left;
+}
+.followName {
+  font-size: 14px;
+}
+.followUserName {
+  font-size: 14px;
+  color: var(--crl-neutral-500);
 }

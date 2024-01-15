@@ -3,8 +3,17 @@ import style from "./layout.module.css";
 import zLogo from "@/../public/zlogo.png";
 import Image from "next/image";
 import { Metadata } from "next";
+import ProfileImage from "../_component/ProfileImage";
+import SearchBar from "./home/_component/SearchBar";
+import FollowButton from "./home/_component/FollowButton";
 
-const user = {
+type UserType = {
+  name: string;
+  username: string;
+  avatarUrl: string;
+};
+
+const user: UserType = {
   name: "와우와우",
   username: "richdad",
   avatarUrl: "/cat.jpg",
@@ -75,9 +84,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
         <div className={style.logoutDiv}>
           <Link className={style.logout} href="/logout">
-            <span className={style.logoutPhoto}>
-              <img src={user.avatarUrl} alt="user profile image" />
-            </span>
+            <ProfileImage avatarUrl={user.avatarUrl} />
             <div className={style.logoutTextDiv}>
               <p className={style.logoutTitle}>{user.name}</p>
               <p className={style.logoutBody}>@{user.username}</p>
@@ -87,7 +94,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
 
       <div>{children}</div>
-      <div className={style.rightSection}></div>
+      <div className={style.rightSection}>
+        <SearchBar />
+        <div className={style.trendDiv}>
+          <h2>나를 위한 트렌드</h2>
+        </div>
+        <div className={style.followDiv}>
+          <h2>팔로우 추천</h2>
+          <div className={style.followItem}>
+            <ProfileImage avatarUrl={user.avatarUrl} />
+            <div className={style.userInform}>
+              <p className={style.followName}>{user.name}</p>
+              <p className={style.followUserName}>@{user.username}</p>
+            </div>
+            <FollowButton />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

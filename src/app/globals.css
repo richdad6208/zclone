@@ -1,15 +1,23 @@
 :root {
   --max-width: 1300px;
 
-  --crl-blue-100: #e8f5fd;
+  --crl-blue-100: hsl(203, 84%, 95%);
+  --crl-blue-200: hsl(204, 70%, 74%);
   --crl-blue-800: #1d9bf0;
   --crl-blue-900: #1a8cd8;
+
+  --crl-green-100: #def1eb;
+  --crl-green-800: hsl(161, 88%, 36%);
+
+  --crl-red-100: #f7e0eb;
+  --crl-red-800: hsl(332, 78%, 51%);
 
   --crl-neutral-100: hsl(0, 0%, 99%);
   --crl-neutral-150: hsl(0, 0%, 94%);
   --crl-neutral-200: hsl(0, 0%, 87%);
   --crl-neutral-300: hsl(0, 0%, 70%);
   --crl-neutral-400: hsl(0, 0%, 60%);
+  --crl-neutral-500: hsl(0, 0%, 40%);
   --crl-neutral-800: hsl(0, 0%, 10%);
   --crl-neutral-900: hsl(0, 0%, 0%);
 
@@ -22,12 +30,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font: inherit;
 }
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 a {
