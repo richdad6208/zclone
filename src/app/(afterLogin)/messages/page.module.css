@@ -1,0 +1,12 @@
+.messagesDiv {
+  padding: 14px;
+}
+
+.messagesDiv h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.messagesDiv p {
+  margin-top: 20px;
+  margin-left: 100px;
+}

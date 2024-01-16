@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid var(--crl-neutral-150);
+  padding: 14px 10px;
+}
+
+.headerDiv {
+  display: flex;
+}
+
+.nameInHeader {
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 40px;
+}
+
+.userImage {
+  width: 200px;
+}
+
+.userImage svg {
+  width: 100%;
+}
+
+.userInformDiv {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
+}

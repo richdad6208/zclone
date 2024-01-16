@@ -1,0 +1,9 @@
+.searchDiv {
+  border: 1px solid var(--crl-neutral-150);
+  padding: 6px 20px 10px;
+}
+.contentDiv h2 {
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 600;
+}

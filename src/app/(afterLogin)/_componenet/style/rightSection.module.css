@@ -1,0 +1,17 @@
+.trendDiv,
+.followDiv {
+  border-radius: 14px;
+  padding: 10px 20px 20px;
+  background-color: var(--crl-neutral-150);
+  font-weight: 700;
+}
+.trendDiv {
+  font-size: 20px;
+}
+.followDiv h2 {
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+.hide {
+  display: none;
+}

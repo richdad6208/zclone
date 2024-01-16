@@ -1,14 +1,9 @@
-.content {
-  width: 600px;
-  height: 500dvh;
-  margin-left: var(--leftSection-width);
-  border: 1px solid var(--crl-neutral-150);
-}
 .postForm {
   border-bottom: 1px solid var(--crl-neutral-150);
   padding: 20px 20px 10px;
 }
 .formTextDiv {
+  position: relative;
   display: flex;
 }
 .formTextDiv textarea {

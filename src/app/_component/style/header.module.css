@@ -1,12 +1,11 @@
 .header h2 {
-  margin-bottom: 20px;
   padding: 14px;
   font-size: 22px;
+  font-weight: 700;
 }
 
 .tabMenu {
   display: flex;
-  margin-top: 30px;
   font-size: 16px;
 }
 .tabMenu li {

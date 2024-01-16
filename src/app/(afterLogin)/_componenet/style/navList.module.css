@@ -1,0 +1,112 @@
+.logo {
+  margin-left: 14px;
+  padding: 4px;
+  border-radius: 50%;
+  width: fit-content;
+}
+@media (max-width: 1300px) {
+  .logo {
+    margin-left: 0;
+    padding: 6px;
+  }
+}
+.logo:hover {
+  cursor: pointer;
+  background-color: var(--crl-neutral-200);
+}
+.menuItem {
+  display: flex;
+  gap: 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+@media (max-width: 1300px) {
+  .menuItem {
+    padding-inline: 12px;
+  }
+}
+.menuItem:hover {
+  background-color: var(--crl-neutral-200);
+  border-radius: 100vmax;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.menuText {
+  font-size: 20px;
+}
+
+@media (max-width: 1300px) {
+  .menuText {
+    display: none;
+  }
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  background: var(--crl-blue-800);
+  margin-top: 20px;
+  padding: 14px 0;
+  border: 0;
+  border-radius: 100vmax;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.iconInButton {
+  display: none;
+  fill: var(--crl-neutral-100);
+}
+@media (max-width: 1300px) {
+  .actionButton {
+    width: fit-content;
+    padding: 14px;
+  }
+  .iconInButton {
+    display: block;
+  }
+  .textInButton {
+    display: none;
+  }
+}
+
+.logoutDiv {
+  margin-top: auto;
+  padding: 10px;
+}
+
+.logoutDiv:hover {
+  cursor: pointer;
+  background-color: var(--crl-neutral-200);
+  border-radius: 100vmax;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .logoutDiv:hover {
+    width: fit-content;
+  }
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 1300px) {
+  .logoutTextDiv {
+    display: none;
+  }
+}
+
+.logoutTitle {
+  font-weight: 700;
+  font-size: 14px;
+}
+.logoutBody {
+  font-size: 13px;
+}

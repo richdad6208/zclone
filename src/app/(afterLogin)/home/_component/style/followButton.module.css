@@ -1,9 +1,10 @@
 .followButton {
   border-width: 1px;
   border-style: solid;
-  border-color: var(--crl-neutral-900);
+  border-color: var(--crl-neutral-500);
   border-radius: 100vmax;
-  padding: 6px 14px;
+  padding: 6px 16px;
+  background-color: var(--crl-neutral-100);
   font-size: 14px;
   font-weight: 600;
 }

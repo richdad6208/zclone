@@ -24,6 +24,12 @@
   --leftSection-width: 267px;
 }
 
+@media (max-width: 1300px) {
+  :root {
+    --leftSection-width: 64px;
+  }
+}
+
 *,
 *::before,
 *::after {

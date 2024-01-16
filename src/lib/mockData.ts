@@ -4,7 +4,7 @@ const faker = new Faker({ locale: ko });
 export const post = {
   createdAt: faker.date.past(),
   content: faker.lorem.paragraph(),
-  photoUrl: faker.image.urlPicsumPhotos(),
+  photoUrl: "https://source.unsplash.com/random",
 };
 
 export const user = {
